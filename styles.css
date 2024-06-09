@@ -1,9 +1,15 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Baloo 2', cursive;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 .header {
@@ -11,31 +17,44 @@ body {
     color: #fff;
     text-align: center;
     padding: 50px 20px;
+    animation: slideInFromTop 1s;
 }
 
-.header h1 {
+@keyframes slideInFromTop {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+h1 {
     margin: 0;
     font-size: 3rem;
 }
 
-.header p {
+p {
     font-size: 1.5rem;
 }
 
-.description {
+.description, .product-open, .carbon-footprint, .store-display, .waitlist {
     padding: 20px;
     text-align: center;
 }
 
-.description h2 {
+h2 {
     font-size: 2rem;
     color: #ffcc00;
-}
-
-.description p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 .product-image {
@@ -44,24 +63,12 @@ body {
     height: auto;
     margin: 20px auto;
     display: block;
+    animation: bounceIn 2s;
 }
 
-.carbon-footprint {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-top: 5px solid #ffcc00;
-}
-
-.carbon-footprint h2 {
-    font-size: 2rem;
-    color: #ffcc00;
-}
-
-.carbon-footprint p {
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
+@keyframes bounceIn {
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
 }
 
 .map-container {
@@ -88,36 +95,20 @@ body {
     border-radius: 5px;
 }
 
-.waitlist {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-top: 5px solid #ffcc00;
-}
-
-.waitlist h2 {
-    font-size: 2rem;
-}
-
-.waitlist p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-}
-
-form {
+.waitlist form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-form label {
+.waitlist form label {
     width: 80%;
     max-width: 400px;
     text-align: left;
     margin-bottom: 5px;
 }
 
-form input, form textarea {
+.waitlist form input, .waitlist form textarea {
     padding: 10px;
     margin: 5px 0;
     width: 80%;
@@ -126,7 +117,7 @@ form input, form textarea {
     border-radius: 5px;
 }
 
-form button {
+.waitlist form button {
     padding: 10px 20px;
     margin-top: 10px;
     background-color: #ffcc00;
@@ -137,7 +128,7 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+.waitlist form button:hover {
     background-color: #ffaa00;
 }
 
@@ -147,6 +138,7 @@ form button:hover {
     text-align: center;
     padding: 10px;
 }
+
 
 
 
