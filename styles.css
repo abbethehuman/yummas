@@ -38,6 +38,51 @@ body {
     margin: 0 auto;
 }
 
+.product-image {
+    max-width: 80%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.carbon-footprint {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+.carbon-footprint h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+.carbon-footprint p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.map-container {
+    position: relative;
+    margin-top: 20px;
+}
+
+.map-image {
+    max-width: 80%;
+    height: auto;
+}
+
+.pin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 .waitlist {
     background-color: #fff;
     padding: 20px;
@@ -54,29 +99,29 @@ body {
     margin-bottom: 20px;
 }
 
-#waitlistForm {
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#waitlistForm label {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 0;
+form label {
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
-#waitlistForm input, #waitlistForm textarea {
+form input, form textarea {
     padding: 10px;
     margin: 5px 0;
-    width: 100%;
+    width: 80%;
     max-width: 400px;
     border: 2px solid #ffcc00;
     border-radius: 5px;
 }
 
-#waitlistForm button {
+form button {
     padding: 10px 20px;
     margin-top: 10px;
     background-color: #ffcc00;
@@ -87,7 +132,7 @@ body {
     cursor: pointer;
 }
 
-#waitlistForm button:hover {
+form button:hover {
     background-color: #ffaa00;
 }
 
@@ -97,3 +142,4 @@ body {
     text-align: center;
     padding: 10px;
 }
+
