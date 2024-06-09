@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background-color: #ffcc00;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+.description {
+    padding: 20px;
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+.description p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.waitlist {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid #ffcc00;
+}
+
+.waitlist h2 {
+    font-size: 2rem;
+}
+
+.waitlist p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#waitlistForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#waitlistForm input {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+    max-width: 400px;
+    border: 2px solid #ffcc00;
+    border-radius: 5px;
+}
+
+#waitlistForm button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ffcc00;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#waitlistForm button:hover {
+    background-color: #ffaa00;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
