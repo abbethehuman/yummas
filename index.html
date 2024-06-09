@@ -15,21 +15,27 @@
     <section class="description">
         <h2>Why Yummus?</h2>
         <p>Yummus is a tasty and nutritious alternative to traditional hummus, made from yellow lentils. Packed with protein, fiber, and essential vitamins, it's not only a superfood but also environmentally friendly. Yellow lentils require less water and produce fewer emissions compared to other crops, making Yummus a sustainable choice for your health and the planet.</p>
+        <img src="yummus.jpg" alt="Yummus Packaging" class="product-image">
+    </section>
+
+    <section class="carbon-footprint">
+        <h2>Low Carbon Footprint</h2>
+        <p>Our yellow lentils are sourced locally in Christchurch, New Zealand. This means fewer carbon miles and a lower environmental impact compared to imported products. Enjoy delicious hummus while contributing to a healthier planet.</p>
+        <div class="map-container">
+            <img src="nz-map.png" alt="Map of New Zealand with Christchurch pinned" class="map-image">
+            <div class="pin">Christchurch</div>
+        </div>
     </section>
 
     <section class="waitlist">
         <h2>Join the Waitlist</h2>
         <p>Be the first to try Yummus! Sign up below to join our waitlist and get exclusive updates.</p>
-        <!-- Formspree form -->
-        <form action="https://formspree.io/f/mvoeepan" method="POST" id="waitlistForm">
-            <label>
-                Your name:
-                <input type="text" name="name" id="name" placeholder="Your Name" required>
-            </label>
-            <label>
-                Your email:
-                <input type="email" name="email" id="email" placeholder="Your Email" required>
-            </label>
+        <!-- Formspree form integration -->
+        <form action="https://formspree.io/f/mvoeepan" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
             <button type="submit">Join Waitlist</button>
         </form>
     </section>
@@ -41,4 +47,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
