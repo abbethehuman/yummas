@@ -41,16 +41,9 @@ body {
 .product-image {
     width: 80%;
     max-width: 600px;
-    height: 300px;
-    background-color: #ddd;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
     margin: 20px auto;
-    font-size: 1.5rem;
-    border: 2px solid #ffcc00;
-    border-radius: 10px;
+    display: block;
 }
 
 .carbon-footprint {
@@ -79,16 +72,9 @@ body {
 .map-image {
     width: 80%;
     max-width: 600px;
-    height: 300px;
-    background-color: #ccc;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
     margin: 0 auto;
-    font-size: 1.5rem;
-    border: 2px solid #ffcc00;
-    border-radius: 10px;
+    display: block;
 }
 
 .pin {
@@ -161,4 +147,5 @@ form button:hover {
     text-align: center;
     padding: 10px;
 }
+
 
