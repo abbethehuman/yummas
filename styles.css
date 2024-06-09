@@ -16,7 +16,7 @@ body {
     background-color: #ffcc00;
     color: #fff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
     animation: slideInFromTop 1s;
 }
 
@@ -29,7 +29,7 @@ body {
     width: 100px;
     height: auto;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     animation: spin 4s infinite linear;
 }
 
@@ -39,30 +39,55 @@ body {
 }
 
 h1 {
-    margin: 0;
-    font-size: 3rem;
+    margin: 10px 0 0;
+    font-size: 2.5rem;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin: 5px 0 20px;
 }
 
-.description, .product-open, .carbon-footprint, .store-display, .waitlist {
+main {
     padding: 20px;
-    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.text-column, .image-column {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text-column {
+    max-width: 500px;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
     font-size: 2rem;
     color: #ffcc00;
+    margin-bottom: 10px;
 }
 
 .product-image {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
-    margin: 20px auto;
-    display: block;
     animation: bounceIn 2s;
 }
 
@@ -73,15 +98,12 @@ h2 {
 
 .map-container {
     position: relative;
-    margin-top: 20px;
 }
 
 .map-image {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
-    margin: 0 auto;
-    display: block;
 }
 
 .pin {
@@ -99,11 +121,13 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .waitlist form label {
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
     text-align: left;
     margin-bottom: 5px;
 }
@@ -111,10 +135,10 @@ h2 {
 .waitlist form input, .waitlist form textarea {
     padding: 10px;
     margin: 5px 0;
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
     border: 2px solid #ffcc00;
     border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .waitlist form button {
@@ -126,6 +150,7 @@ h2 {
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .waitlist form button:hover {
@@ -138,6 +163,7 @@ h2 {
     text-align: center;
     padding: 10px;
 }
+
 
 
 
