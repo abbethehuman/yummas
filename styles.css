@@ -111,6 +111,16 @@ h2 {
     border-radius: 5px;
 }
 
+section:nth-child(even) {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+section:nth-child(odd) {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
 .waitlist form {
     display: flex;
     flex-direction: column;
@@ -130,7 +140,7 @@ h2 {
     padding: 10px;
     margin: 5px 0;
     width: 100%;
-    border: 2px solid #ffcc00;
+    border: 2px solid #fff;
     border-radius: 5px;
     box-sizing: border-box;
 }
@@ -138,17 +148,18 @@ h2 {
 .waitlist form button {
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: #ffcc00;
+    background-color: #fff;
     border: none;
-    color: #fff;
+    color: #ffcc00;
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .waitlist form button:hover {
     background-color: #ffaa00;
+    color: #fff;
 }
 
 .footer {
@@ -157,6 +168,7 @@ h2 {
     text-align: center;
     padding: 10px;
 }
+
 
 
 
